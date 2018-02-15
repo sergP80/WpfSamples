@@ -27,6 +27,14 @@
             
             <Label Content="_E-Mail" Margin="2" Target="{Binding ElementName=txbxEmail}"></Label>
             <TextBox x:Name="txbxEmail" Margin="2"></TextBox>
+
+            <Label Content="P_assword" Margin="2" Target="{Binding ElementName=txbxEmail}"></Label>
+            <PasswordBox 
+                x:Name="pbxPassword" 
+                Margin="2"
+                PasswordChar="*"
+                MaxLength="15"
+             />
         </StackPanel>
     </Grid>
 </Window>
