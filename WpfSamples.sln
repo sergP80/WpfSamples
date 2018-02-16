@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextBlockSamples", "TextBlockSamples\TextBlockSamples.csproj", "{F6B1AC34-0FF3-4998-A14A-F30CF6B4483D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObservableDemo01", "ObservableDemo01\ObservableDemo01.csproj", "{A2E24D20-8112-4361-B16A-8B2A8D2FD6F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F6B1AC34-0FF3-4998-A14A-F30CF6B4483D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6B1AC34-0FF3-4998-A14A-F30CF6B4483D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6B1AC34-0FF3-4998-A14A-F30CF6B4483D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E24D20-8112-4361-B16A-8B2A8D2FD6F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E24D20-8112-4361-B16A-8B2A8D2FD6F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E24D20-8112-4361-B16A-8B2A8D2FD6F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E24D20-8112-4361-B16A-8B2A8D2FD6F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
