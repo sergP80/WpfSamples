@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2024
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextBlockSamples", "TextBlockSamples\TextBlockSamples.csproj", "{F6B1AC34-0FF3-4998-A14A-F30CF6B4483D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObservableDemo01", "ObservableDemo01\ObservableDemo01.csproj", "{A2E24D20-8112-4361-B16A-8B2A8D2FD6F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SliderBindDemo", "SliderBindDemo\SliderBindDemo.csproj", "{FA5CF25A-7930-479F-9F3C-6C7BEE71E8D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A2E24D20-8112-4361-B16A-8B2A8D2FD6F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2E24D20-8112-4361-B16A-8B2A8D2FD6F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2E24D20-8112-4361-B16A-8B2A8D2FD6F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA5CF25A-7930-479F-9F3C-6C7BEE71E8D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA5CF25A-7930-479F-9F3C-6C7BEE71E8D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA5CF25A-7930-479F-9F3C-6C7BEE71E8D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA5CF25A-7930-479F-9F3C-6C7BEE71E8D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

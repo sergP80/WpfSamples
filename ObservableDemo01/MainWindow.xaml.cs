@@ -28,7 +28,7 @@ namespace ObservableDemo01
         public MainWindow()
         {
             InitializeComponent();
-            lbxOrders.ItemsSource = Orders;
+           lbxOrders.ItemsSource = Orders;
         }
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
@@ -41,15 +41,6 @@ namespace ObservableDemo01
             if (lbxOrders.SelectedItem != null)
             {
                 Orders.Remove((Order)lbxOrders.SelectedItem);
-            }
-        }
-
-        private void btnEdit_Click(object sender, RoutedEventArgs e)
-        {
-            if (lbxOrders.SelectedItem != null)
-            {
-                Order order = (Order)lbxOrders.SelectedItem;
-                order.Price = (new Random()).NextDouble() * 1000;
             }
         }
 

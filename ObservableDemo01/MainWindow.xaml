@@ -22,7 +22,7 @@
             <ColumnDefinition Width="4*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <ListBox Name="lbxOrders" 
+        <ListBox Name="lbxOrders"
                  ItemTemplate="{StaticResource OrderTemplate}">
             
         </ListBox>
