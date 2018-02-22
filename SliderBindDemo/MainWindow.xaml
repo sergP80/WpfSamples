@@ -5,27 +5,55 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SliderBindDemo"
         mc:Ignorable="d"
+        Name="wndMain"
         Title="SliderDemo" Height="350" Width="525">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="7*"></RowDefinition>
             <RowDefinition Height="3*"></RowDefinition>
-            <RowDefinition Height="5*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Slider
+        <StackPanel>
+            <Slider
             Name="sldTick"
             Minimum="1" 
-            Maximum="1000" 
+            Maximum="100" 
             TickFrequency="10"
             IsSnapToTickEnabled="True"
-            TickPlacement="BottomRight"
+            TickPlacement="TopLeft"
             Margin="10"
             Background="MidnightBlue"></Slider>
+        </StackPanel>
         <StackPanel Grid.Row="1">
             <TextBox  
                 Margin="10" 
-                Text="{Binding Path=Value, ElementName=sldTick, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                Text="{Binding 
+                Path=Value, 
+                ElementName=sldTick, 
+                Mode=TwoWay, 
+                UpdateSourceTrigger=PropertyChanged}">
                 
             </TextBox>
+            <Border BorderThickness="3">
+                <Border.BorderBrush>
+                    <SolidColorBrush>
+                        <SolidColorBrush.Color>Green</SolidColorBrush.Color>
+                    </SolidColorBrush>
+                </Border.BorderBrush>
+                <StackPanel Orientation="Horizontal" Grid.Row="1"
+                        Margin="10"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Bottom">
+
+                    <TextBlock Margin="10"
+                    Text="{Binding Path=Width, ElementName=wndMain}"></TextBlock>
+
+                    <Label Content="X" Margin="5"></Label>
+
+                    <TextBlock Margin="10"
+                    Text="{Binding Path=Height, ElementName=wndMain}"></TextBlock>
+                </StackPanel>
+            </Border>
+            
         </StackPanel>
     </Grid>
 </Window>
