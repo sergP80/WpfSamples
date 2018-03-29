@@ -21,8 +21,10 @@
         <CommandBinding Command="ApplicationCommands.New" Executed="NewCommand_Executed" CanExecute="NewCommand_CanExecute"/>
         <CommandBinding Command="ApplicationCommands.Open" Executed="OpenCommand_Executed" CanExecute="OpenCommand_CanExecute"/>
         <CommandBinding Command="ApplicationCommands.Save" Executed="SaveCommand_Executed" CanExecute="SaveCommand_CanExecute"/>
-        <CommandBinding Command="local:EditCommands.Insert" Executed="InsertCommand_Executed" CanExecute="InsertCommand_CanExecute"/>
-        <CommandBinding Command="local:EditCommands.Remove" Executed="CommandBinding_Executed" CanExecute="CommandBinding_CanExecute"/>
+        <CommandBinding Command="local:CustomCommands.Insert" Executed="InsertCommand_Executed" CanExecute="InsertCommand_CanExecute"/>
+        <CommandBinding Command="local:CustomCommands.Remove" Executed="RemoveCommand_Executed" CanExecute="RemoveCommand_CanExecute"/>
+
+        <CommandBinding Command="local:CustomCommands.Exit" Executed="RemoveCommand_Executed" CanExecute="RemoveCommand_CanExecute"/>
     </Window.CommandBindings>
 
     <DockPanel>
@@ -36,21 +38,22 @@
             </MenuItem>
 
             <MenuItem Header="Edit">
-                <MenuItem Command="local:EditCommands.Insert"></MenuItem>
-                <MenuItem Command="ApplicationCommands.Open"></MenuItem>
-                <MenuItem Command="ApplicationCommands.Save"></MenuItem>
-                <Separator/>
-                <MenuItem Header="Exit"></MenuItem>
+                <MenuItem Command="local:CustomCommands.Insert"></MenuItem>
+                <MenuItem Command="local:CustomCommands.Remove"></MenuItem>
             </MenuItem>
         </Menu>
         
-        <ToolBarPanel DockPanel.Dock="Top">
+        <ToolBarTray DockPanel.Dock="Top">
             <ToolBar>
-                <Button Name="tbtNew"></Button>
-                <Button Name="tbtOpen"></Button>
-                <Button Name="tbtSave"></Button>
+                <Button Command="ApplicationCommands.New"></Button>
+                <Button Command="ApplicationCommands.Open"></Button>
+                <Button Command="ApplicationCommands.Save"></Button>
             </ToolBar>
-        </ToolBarPanel>
+            <ToolBar>
+                <Button Command="local:CustomCommands.Insert"></Button>
+                <Button Command="local:CustomCommands.Remove"></Button>
+            </ToolBar>
+        </ToolBarTray>
         
         <Grid>
             <Grid.ColumnDefinitions>

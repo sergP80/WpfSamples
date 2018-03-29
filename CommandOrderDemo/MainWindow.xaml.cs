@@ -96,26 +96,14 @@ namespace CommandOrderDemo
 
         private void RemoveCommand_Executed(object sender, ExecutedRoutedEventArgs e)
         {
-
+            Orders.Remove((Order)lbxOrders.SelectedItem);
         }
 
         private void RemoveCommand_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
-            e.CanExecute = true;
+            e.CanExecute = Orders.Count > 0;
         }
+
     }
 
-    public static class EditCommands
-    {
-        public static readonly RoutedUICommand Insert =
-            new RoutedUICommand("Insert", "Insert", typeof(EditCommands));
-        public static readonly RoutedUICommand Remove =
-            new RoutedUICommand("Remove", "Remove", typeof(EditCommands));
-    }
-
-    public static class ExitCommands
-    {
-        public static readonly RoutedUICommand Exit =
-            new RoutedUICommand("Exit", "Exit", typeof(ExitCommands), new InputGestureCollection() { new KeyGesture(Key.Q, ModifierKeys.Control) });
-    }
 }
