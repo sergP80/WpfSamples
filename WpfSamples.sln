@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObservableDemo01", "Observa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SliderBindDemo", "SliderBindDemo\SliderBindDemo.csproj", "{FA5CF25A-7930-479F-9F3C-6C7BEE71E8D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandOrderDemo", "CommandOrderDemo\CommandOrderDemo.csproj", "{EB570AB1-B007-46CE-A5B4-4F2F8B21B0F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FA5CF25A-7930-479F-9F3C-6C7BEE71E8D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA5CF25A-7930-479F-9F3C-6C7BEE71E8D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA5CF25A-7930-479F-9F3C-6C7BEE71E8D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB570AB1-B007-46CE-A5B4-4F2F8B21B0F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB570AB1-B007-46CE-A5B4-4F2F8B21B0F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB570AB1-B007-46CE-A5B4-4F2F8B21B0F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB570AB1-B007-46CE-A5B4-4F2F8B21B0F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
